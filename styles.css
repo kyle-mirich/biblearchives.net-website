@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Additional styles for tree viewer and checkboxes */
+  #github-tree-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Styles for GitHub-like folder tree */
+  .folder, .file {
+    margin-left: 20px;
+  }
+  
+  .folder-toggle::before {
+    content: '▶';
+    cursor: pointer;
+  }
+  
+  .folder-open .folder-toggle::before {
+    content: '▼';
+  }
+  
+  /* New styles for Search Bar */
+  #search-bar-container {
+    margin-bottom: 1rem;
+  }
+  
+  #search-bar {
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styles for Download All Button */
+  #downloadBtn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.25rem;
+  }
+  
+  #downloadBtn:hover {
+    background-color: #0056b3;
+  }
+  

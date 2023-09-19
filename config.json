@@ -1,0 +1,5 @@
+{
+    "githubRepoUrl": "https://github.com/kyle-mirich/bible-bot.git",
+    "ignore": [".gitignore","LICENSE","bible-bot.py", "README.md","requirements.txt"]
+  }
+  
