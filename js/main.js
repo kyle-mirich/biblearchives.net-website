@@ -161,7 +161,7 @@ function buildTree(hierarchicalData, parentElement, selectedFiles) {
 // Populate GitHub tree
 async function populateGithubTree() {
   const selectedFiles = [];
-  const config = await fetchJson('./config.json');
+  const config = await fetchJson('config/config.json');
   if (!config || !config.githubRepoUrl) {
     console.error("Missing configuration or 'githubRepoUrl'");
     return;
