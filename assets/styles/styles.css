@@ -78,4 +78,163 @@ body {
   #downloadBtn:hover {
     background-color: #0056b3;
   }
-  
+ /* Your Existing Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#github-tree-container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.folder, .file {
+  margin-left: 20px;
+}
+
+.folder-toggle::before {
+  content: '▶';
+  cursor: pointer;
+}
+
+.folder-open .folder-toggle::before {
+  content: '▼';
+}
+
+#search-bar-container {
+  margin-bottom: 1rem;
+}
+
+#search-bar {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+#downloadBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+#downloadBtn:hover {
+  background-color: #0056b3;
+}
+
+/* New Added Styles for Modern and Mobile-friendly Design */
+.nav-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.nav-tile {
+  background-color: #007bff;
+  color: white;
+  width: 100%; /* Mobile-first */
+  margin: 10px 0;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+  .nav-tile {
+      width: calc(33.333% - 20px); /* Three tiles per row */
+  }
+}
+
+/* Main Announcement Styles */
+#main-announcement {
+  background-color: #f44336;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Additional styles for overview and other new sections */
+#overview, #community, #events {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Full height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flexbox layout to push the footer to the bottom */
+#page-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content wrapper */
+#content-wrap {
+  flex: 1;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+#header-logo {
+  width: 200px; /* Adjust as needed */
+  height: auto;
+  margin-right: 10px;
+}
+

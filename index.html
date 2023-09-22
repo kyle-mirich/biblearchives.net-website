@@ -1,30 +1,72 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>Bible Archives</title>
-<link href="assets/styles/styles.css" rel="stylesheet" type="text/css"/>
-<!-- Include JSZip and JSZip-utils libraries for ZIP functionalities -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-</head>
-<body>
-<!-- Header Section -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="BibleArchives.net: Your source for scriptural texts, community discussions, and scholarly insights.">
+        <meta name="keywords" content="Bible, Archives, Religious Texts, Community, Scholarly Insights">
+        <meta name="author" content="BibleArchives.net Team">
+        <title>Bible Archives</title>
+
+        <link rel="stylesheet" href="assets/styles/styles.css">
+        <link rel="icon" href="assets/images/bible_archives_512x512.png" type="image/png">
+    </head>
+
+    <!-- Header Section -->
 <header>
-<h1>Welcome to BibleArchives.net</h1>
-</header><nav><ul><li><a href="downloads.html">Downloads</a></li><li><a href="https://blog.biblearchives.net/">Blog</a></li><li><a href="about_biblearchive.net.html">About BibleArchive.net</a></li></ul></nav>
-<!-- Main Content -->
-<main>
+    <img src="assets/images/bible_archive_horizontal_logo.png" alt="Bible Archives Logo" id="header-logo">
+</header>
+
+<body>
+    <!-- Content Wrapper -->
+    <div id="content-wrap">
+        <!-- Header Section -->
+
+
+        <!-- Main Announcement -->
+        <section id="main-announcement">
+            <h2>Main Announcement</h2>
+            <p>Join our new community forum today! Engage in discussions, share resources, and more.</p>
+        </section>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Overview Section -->
+            <section id="overview">
+                <h2>About BibleArchives.net</h2>
+                <p>Your go-to platform for scriptural texts, community discussions, and scholarly insights.</p>
+            </section>
+
+            <!-- Navigation Tiles -->
+            <section class="nav-tiles">
+                <div class="nav-tile" onclick="window.location='downloads.html'">
+                    <h2>Downloads</h2>
+                    <p>Access an extensive library of religious texts.</p>
+                </div>
+                <div class="nav-tile" onclick="window.location='https://blog.biblearchives.net/'">
+                    <h2>Blog</h2>
+                    <p>Insights from experts in the field.</p>
+                </div>
+                <div class="nav-tile" onclick="window.location='about_biblearchive.net.html'">
+                    <h2>About Us</h2>
+                    <p>Learn about our mission and how you can contribute.</p>
+                </div>
+                <div class="nav-tile" onclick="window.location='https://forum.biblearchives.net'">
+                    <h2>Forum</h2>
+                    <p>Come join a community of like minded believers looking to study the Bible!</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
 
 
-<!-- Footer -->
-<footer>
-<!-- Insert footer content here -->
-</footer>
-<!-- JavaScript -->
-<script src="js/utils/fetchJson.js"></script>
-<script src="js/components/buildTree.js"></script>
-<script src="js/main.js"></script>
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="js/utils/fetchJson.js"></script>
+    <script src="js/components/buildTree.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
+
+
