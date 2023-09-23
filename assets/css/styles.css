@@ -1,0 +1,112 @@
+/* Variables for commonly used values */
+:root {
+    --base-padding: 16px;
+    --base-border-color: #ccc;
+    --checkbox-margin: 8px;
+    --tree-indent: 20px;
+    --primary-bg-color: #007bff;
+    --hover-bg-color: #0056b3;
+    --border-radius: 4px;
+    --text-color-white: #fff;
+    --text-color-black: #333;
+    --transition-duration: 0.3s;
+  }
+  
+  /* General styling for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header section */
+  header {
+    background-color: var(--text-color-black);
+    color: var(--text-color-white);
+    padding: var(--base-padding);
+    text-align: center;
+  }
+  
+  /* Main content area */
+  main {
+    padding: var(--base-padding);
+  }
+  
+  /* Footer area */
+  footer {
+    background-color: var(--text-color-black);
+    color: var(--text-color-white);
+    text-align: center;
+    padding: var(--base-padding);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* GitHub tree container */
+  #github-tree-container {
+    padding: var(--base-padding);
+    border: 1px solid var(--base-border-color);
+  }
+  
+  /* Checkbox styling */
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    margin-right: var(--checkbox-margin);
+  }
+  
+  /* Folder and file tree styling */
+  .folder, .file {
+    margin-left: var(--tree-indent);
+  }
+  
+  .folder-toggle::before {
+    content: '▶';
+    cursor: pointer;
+    transition: transform var(--transition-duration);
+  }
+  
+  .folder-open .folder-toggle::before {
+    content: '▼';
+  }
+  
+  /* Download button styling */
+  #downloadBtn {
+    background-color: var(--primary-bg-color);
+    color: var(--text-color-white);
+    padding: var(--base-padding);
+    cursor: pointer;
+    border: none;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-duration);
+  }
+  
+  #downloadBtn:hover, #downloadBtn:focus {
+    background-color: var(--hover-bg-color);
+  }
+  
+  /* Back button styling */
+  .back-button-container {
+    text-align: center;
+    margin: 16px 0;
+  }
+  
+  .back-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
